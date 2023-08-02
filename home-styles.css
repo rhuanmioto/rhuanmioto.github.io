@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Epilogue;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(30, 34, 49);
+    
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+/* -------------------------left---------------------------- */
+
+.left{
+   
+    background-image: url(images/416471aad3173d211ae7d02f9d13fa6a.jpg);
+    display: flex;
+    background-color: rgb(75, 75, 75);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 28vw;
+    height: 300vh;
+    padding-top: 12.8rem;
+    padding-left: 6.4rem;    
+    padding-right: 6.4rem;
+    flex-direction: column;
+}
+
+.eu{
+    cursor: pointer;
+}
+
+.inner{
+    margin-left: 17rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 52.4rem;
+    max-height: 23vh;
+
+}
+
+.inner img{
+    width: 11rem;
+}
+
+.left h1{
+    width: 25rem;
+    color: white;
+}
+.left h2{
+    width: 34rem;
+    color: rgb(224, 224, 224);
+    text-align: end;
+}
+.icons{
+    letter-spacing: 0.5rem;
+    font-size: 3.4rem;
+    text-align: end;
+    margin-top: 18rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@keyframes corgitshadow{
+    from{
+color:  rgb(173, 173, 173);
+    }
+    to{
+        text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        color: black;
+    }
+}
+@keyframes corzapshadow{
+    from{
+color:  rgb(173, 173, 173);
+    }
+    to{
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.425);
+        color: rgb(72, 255, 0);
+    }
+}
+
+.whatsapp,.github{  
+    color: rgb(173, 173, 173);
+    
+}
+.whatsapp:hover{  
+    animation: corzapshadow 0.3s linear forwards
+}
+.github:hover{
+    animation: corgitshadow 0.3s linear forwards
+
+}
+
+
+.copyright{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(173, 173, 173);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* -------------------------right---------------------------- */
+
+.right{
+    max-height: 300rem ;
+    width:70vw;
+    background-color: #0b0b10;
+    color: #a1a1a1;
+    overflow-y:hidden;
+    
+}
+
+.inside{
+    margin-top: 12.8rem;
+    margin-left: 6.4rem;
+    margin-right: 16rem;
+    max-width: 72rem;
+
+    
+}
+.inside h1{
+    font-size: 3.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+    margin-bottom: 4.8rem;
+}
+.inside h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+.inside hr{
+    size:10;
+}
+
+
+
+.inside span{
+    color: lightskyblue;
+}
+
+#cb{
+    display: none;
+}
+#cb:checked ~ .sumir{
+    display: block;
+}
+
+#cb:checked ~ label{
+    display: none;
+}
+
+.sumir{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    width: 13rem;
+    padding: 2rem 1.3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem ;
+    color: rgb(255, 255, 255);
+    border: 0.2rem rgb(255, 255, 255) solid;
+}
+
+
+label:hover{
+    color: lightskyblue;
+    border: 0.2rem lightskyblue solid;
+}
+
+
+table th, table td{
+    color: #a1a1a1;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.fa-html5{
+    color: rgb(255, 97, 40);
+}
+
+.mais{
+    display: inline;
+    color: #a1a1a1;
+    font-size: 2.3rem;
+}
+
+
+
+td.align-center{
+display: flex;
+height: 6rem;
+justify-content: center;
+align-items: center;
+}
+
+.fa-css3-alt{
+    color: blue;
+}
+
+
+.fa-java{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+
+}
+
+.fa-git-alt{
+    color: rgb(255, 123, 0);
+}
+
+.fa-bootstrap{
+    color: rgb(140, 0, 255);
+}
+@media screen and (max-width: 980px) {
+   .main{grid-template-areas: "left""right";
+    .left{
+        min-height: 30rem ;
+        min-width: 30rem;
+        display: flex;
+        padding: 0;
+        margin-left: 0;
+        width: 100vw;
+        height: 35vh;
+        align-items: center;
+
+    }
+
+    .inner{
+        margin-top: 1rem;
+        margin-left: 0;
+        width: 15rem;
+        height: 21rem;
+        align-items: center;
+    }
+    .inner h1{
+        width: 25rem;
+    }
+    .inner h2{
+        text-align: center;
+        width: 20rem;
+    }
+    .icons{
+        margin: 0;
+    }
+    
+
+    .right{
+        padding: 0;
+        width: 100%;
+        height: 200rem;
+    } 
+    .inside{
+        max-width: 80rem;
+        margin-right: 7rem;
+    }
+
+}
+}
+
+   
