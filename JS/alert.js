@@ -1,1 +1,1 @@
-alert("Seja bem vindo a minha primeira pagina importante, por favor não a julgue ela é sensivel demais")
+alert("Seja bem vindo a minha primeira pagina importante, por favor não a julgue ela é sensivel")
